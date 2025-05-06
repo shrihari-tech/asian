@@ -33,7 +33,7 @@ function Home(){
     const handleSubmit = (e) => {
         e.preventDefault();
         //post data
-        axios.post("http://localhost:5000/user/register", forData)
+        axios.post("https://asian-backend.vercel.app/user/register", forData)
             .then((response) => {
                 console.log("Data stored in DB",response.data);
             })

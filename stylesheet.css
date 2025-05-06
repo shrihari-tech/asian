@@ -1,0 +1,35 @@
+ .container{
+    width: 180px;
+    height: 180px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+    border-radius: 30px;
+    border-top: 8px solid black;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.card-hover:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+
+.box-shadow :hover{
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 650px){
+    .container{
+        background-color: red;
+    }
+}
+
+@media only screen and (min-width: 650px){
+    .container{
+        background-color: blue;
+    }
+}

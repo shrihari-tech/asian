@@ -7,7 +7,7 @@ const task = require('./Routes/Task');
 app.use(express.json());
 const cors = require('cors');
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: ['http://localhost:5173','https://asian-backend.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
